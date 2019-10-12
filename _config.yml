@@ -3,3 +3,5 @@ sass:
 collections:
   works:
     output: true
+  news:
+    output: true

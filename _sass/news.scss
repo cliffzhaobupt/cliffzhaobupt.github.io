@@ -1,19 +1,19 @@
 @import "constant";
 
-#works {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em 1em;
-
+#news {
   @media(min-width: $break-point) {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width: $desktop-content-width;
+  }
+
+  li {
+    margin-bottom: 3em;
   }
 
   a {
     text-decoration: none;
 
     &:hover {
-      img, p {
+      h2, time, div, img {
         opacity: $opacity;
       }
     }
@@ -21,27 +21,27 @@
 
   img {
     display: block;
-    margin: auto;
     max-width: 100%;
   }
 
-  p {
-    text-align: center;
-  }
-
-  img, p {
+  h2, time, div, img {
     transition: opacity .5s $timing-function;
   }
 }
 
-#work-detail {
+#news-detail {
   @media(min-width: $break-point) {
     width: $desktop-content-width;
+  }
+
+  h1 {
+    margin: 1em 0;
   }
 
   img {
     display: block;
     max-width: 100%;
+    margin: 1em 0;
   }
 
   .content {
