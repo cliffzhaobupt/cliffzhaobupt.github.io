@@ -8,7 +8,7 @@
   </head>
   <body>
     {% include navigation.html %}
-    <main>
+    <main {% if page.url != "/" %}class="extra-padding"{% endif %}>
       {{ content }}
     </main>
   </body>
