@@ -11,32 +11,18 @@ body {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 700;
   margin: 40px 0;
 }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 
 a {
   color: #222;
   text-decoration: underline;
-}
-
-dt {
-  font-size: 1.2em;
-  line-height: 2;
-  margin-top: 10px;
-
-  &:first-child {
-    margin-top: 0;
-  }
-}
-
-dd {
-  margin: 0;
 }
 
 ul {

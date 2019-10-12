@@ -2,9 +2,12 @@
 layout: default
 title: About
 ---
-<dl>
-{% for item in site.data.about%}
-<dt>{{ item.key }}</dt>
-<dd>{{ item.value }}</dd>
-{% endfor %}
-</dl>
+<div id="about">
+  <img src="/assets/img/about/zhao.jpg" />
+  <dl>
+  {% for item in site.data.about%}
+  <dt>{{ item.key }}</dt>
+  <dd>{{ item.value }}</dd>
+  {% endfor %}
+  </dl>
+</div>

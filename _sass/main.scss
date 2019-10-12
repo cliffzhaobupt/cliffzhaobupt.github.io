@@ -1,9 +1,10 @@
-$timing-function   : cubic-bezier(0.190, 1.000, 0.220, 1.000);
-$nav-width-desktop : 40em;
-$nav-width-mobile  : 20em;
-$nav-item-nb       : 6;
-$break-point       : 40em;
-$header-height     : 60px;
+@import "constant";
+
+$timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
+$nav-width-desktop: 40em;
+$nav-width-mobile: 20em;
+$nav-item-nb: 6;
+$header-height: 60px;
 $main-padding-desktop: 4em;
 $main-padding-mobile: 1em;
 
