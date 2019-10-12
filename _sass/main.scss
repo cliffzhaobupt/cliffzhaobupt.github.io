@@ -1,6 +1,5 @@
 @import "constant";
 
-$timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000);
 $nav-width-desktop: 40em;
 $nav-width-mobile: 20em;
 $nav-item-nb: 6;
@@ -39,9 +38,14 @@ header {
 			text-decoration: none;
 			transition: color .5s $timing-function;
 			margin-left: 1em;
+			transition: opacity .5s $timing-function;
 
-			&:hover, &:focus, &.current {
+			&.current {
 				text-decoration: underline;
+			}
+
+			&:hover, &:focus {
+				opacity: $opacity;
 			}
 		}
 	}

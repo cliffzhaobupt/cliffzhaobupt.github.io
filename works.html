@@ -3,10 +3,12 @@ layout: default
 title: Works
 ---
 <ul id="works">
-{% for work in site.data.works %}
+{% for work in site.works %}
 <li>
-  <img src="{{ work.img }}" />
-  <p>{{ work.name }}</p>
+  <a href="{{ work.url }}">
+    <img src="{{ work.img }}" />
+    <p>{{ work.name }}</p>
+  </a>
 </li>
 {% endfor %}
 </ul>

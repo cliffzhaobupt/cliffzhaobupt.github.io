@@ -9,6 +9,16 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   }
 
+  a {
+    text-decoration: none;
+
+    &:hover {
+      img, p {
+        opacity: $opacity;
+      }
+    }
+  }
+
   img {
     display: block;
     margin: auto;
@@ -17,5 +27,24 @@
 
   p {
     text-align: center;
+  }
+
+  img, p {
+    transition: opacity .5s $timing-function;
+  }
+}
+
+#work-detail {
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .content {
+    margin: 2em 0;
+  }
+
+  @media(min-width: $break-point) {
+    width: 35em;
   }
 }
