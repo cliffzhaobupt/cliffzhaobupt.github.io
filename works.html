@@ -1,0 +1,12 @@
+---
+layout: default
+title: Works
+---
+<ul id="works">
+{% for work in site.data.works %}
+<li>
+  <img src="{{ work.img }}" />
+  <p>{{ work.name }}</p>
+</li>
+{% endfor %}
+</ul>

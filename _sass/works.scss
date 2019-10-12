@@ -1,0 +1,15 @@
+#works {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 2em 1em;
+
+  img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+
+  p {
+    text-align: center;
+  }
+}
