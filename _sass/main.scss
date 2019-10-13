@@ -7,6 +7,11 @@ $header-height: 60px;
 $main-padding-desktop: 4em;
 $main-padding-mobile: 1em;
 
+.full-height {
+	height: 100%;
+	overflow: auto;
+}
+
 header {
 	position: fixed;
 	top: 0;
@@ -41,7 +46,7 @@ header {
 			transition: opacity .5s $timing-function;
 
 			&.current {
-				text-decoration: underline;
+				border-bottom: 2px solid #444;
 			}
 
 			&:hover, &:focus {
@@ -259,8 +264,4 @@ main {
   overflow:hidden;
   padding:0;
   position:absolute; width:1px;
-}
-
-main {
-  min-height: 100vh;
 }

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html {% if page.url == "/" %}class="full-height"{% endif %}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css" />
   </head>
-  <body>
+  <body {% if page.url == "/" %}class="full-height"{% endif %}>
     {% include navigation.html %}
-    <main {% if page.url != "/" %}class="extra-padding"{% endif %}>
+    <main {% if page.url != "/" %}class="extra-padding"{% else %}class="full-height"{% endif %}>
       {{ content }}
     </main>
   </body>
