@@ -10,22 +10,18 @@
   }
 
   a {
+    display: block;
     text-decoration: none;
+    transition: opacity .5s $timing-function;
 
-    &:hover {
-      h2, time, div, img {
-        opacity: $opacity;
-      }
+    &:hover{
+      opacity: $opacity;
     }
   }
 
   img {
     display: block;
     max-width: 100%;
-  }
-
-  h2, time, div, img {
-    transition: opacity .5s $timing-function;
   }
 }
 

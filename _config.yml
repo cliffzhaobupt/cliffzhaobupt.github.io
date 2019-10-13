@@ -5,3 +5,4 @@ collections:
     output: true
   news:
     output: true
+excerpt_separator: <!--more-->

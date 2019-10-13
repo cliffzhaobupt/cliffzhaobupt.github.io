@@ -1,13 +1,8 @@
-@import "constant";
-
-#works {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em 1em;
-
+#blog {
   @media(min-width: $break-point) {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    width: $desktop-content-width;
   }
+
 
   a {
     display: block;
@@ -21,23 +16,30 @@
 
   img {
     display: block;
-    margin: auto;
     max-width: 100%;
   }
 
-  p {
-    text-align: center;
+  .divider {
+    width: 3em;
+    height: 2px;
+    margin: 2em 0;
+    background-color: #444;
   }
 }
 
-#work-detail {
+#post {
   @media(min-width: $break-point) {
     width: $desktop-content-width;
+  }
+
+  h1 {
+    margin: 1em 0;
   }
 
   img {
     display: block;
     max-width: 100%;
+    margin: 2em 0;
   }
 
   .content {
