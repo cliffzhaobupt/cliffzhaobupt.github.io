@@ -1,11 +1,33 @@
 @import "constant";
 
-#blog {
-  @media(min-width: $break-point) {
-    width: $desktop-content-width;
+#blog-list-wrapper {
+  aside {
+    display: none;
+    width: 20em;
+    border: 1px solid #000;
+    font-style: oblique;
+    padding: 1em;
+
+    h2 {
+      font-size: 1.2em;
+      margin: 0 0 1em;
+      font-weight: normal;
+    }
   }
 
+  @media(min-width: $break-point) {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+    gap: 1em;
 
+    aside {
+      display: block;
+    }
+  }
+}
+
+#blog-list {
   a {
     display: block;
     text-decoration: none;
@@ -18,7 +40,7 @@
 
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
   }
 
   .divider {
