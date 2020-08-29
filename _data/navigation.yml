@@ -1,7 +1,3 @@
-- name: News
-  link: /news.html
-- name: Works
-  link: /works.html
 - name: About
   link: /about.html
 - name: Blog
